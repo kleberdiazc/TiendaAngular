@@ -1,0 +1,24 @@
+<div class="container m-5">
+    <h2>Carrito de compras</h2>
+</div>
+<div class=" row ">
+    <div class="col-sm-6 ">
+        <ul class="list-group shoppingCartListDiv ">
+            <li class="list-group-item " *ngFor="let comprado of listcompras">
+                <div class="productDetails ">
+                    <img class="card-img-top " [src]="comprado.producto.img" alt="Card image cap " width="5% " height="5% ">
+                    <div class="productText ">
+                        <p>{{comprado.producto.nombre}}</p>
+                        <p><strong>Unidades: {{comprado.cantidad}} </strong></p>
+                    </div>
+                </div>
+                <p><strong>Subtotal: {{comprado.subtotal}} </strong></p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-sm-6 ">
+        <h2>Total: {{total}} $</h2>
+        <a type="button " class="btn btn-danger btn-sm" routerLink="/home/catalogo">Cancelar</a>
+        <a type="button " class="btn btn-primary btn-sm" (click)="updateStock()">Pagar</a>
+    </div>
+</div>

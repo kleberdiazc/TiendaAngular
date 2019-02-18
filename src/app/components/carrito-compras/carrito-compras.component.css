@@ -1,0 +1,22 @@
+.row {
+    overflow: auto;
+    margin-top: 5%;
+    width: 100% !important;
+}
+
+.productDetails {
+    display: flex;
+}
+
+.productText {
+    margin-left: 2%;
+}
+
+.shoppingCartListDiv {
+    overflow-y: auto;
+    height: 75vh;
+}
+
+.card-img-top {
+    width: 30% !important;
+}
